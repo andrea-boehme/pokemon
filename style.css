@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+  
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+
+  body {
+    padding: 100px 100px;
+    background: rgb(247, 235, 127) !important;
+    width: 100vw;
+    background-attachment: fixed;
+    min-height: 100vh;
+   
+    --bg-flying: rgb(64, 51, 243);
+    --bg-fire: rgb(235, 78, 78);
+    --bg-grass: rgb(53, 207, 171);
+    --bg-bug: rgb(180, 214, 57);
+    --bg-water: rgb(76, 142, 204);
+    --bg-electric: rgb(235, 182, 37);
+    --bg-poison: rgb(153, 80, 182);
+    --bg-normal: rgb(255, 152, 56);
+    --bg-fairy: rgb(224, 127, 224);
+    --bg-ground: rgb(231, 197, 102);
+    --bg-fighting: rgb(224, 56, 56);
+    --bg-psychic: rgb(213, 216, 62);
+    --bg-rock: rgb(112, 105, 105);
+    --bg-dark: rgb(33, 33, 33);
+    --bg-ghost: rgb(194, 184, 184);
+    --bg-ice: rgb(185, 219, 203);
+  }
+
+  .bg-flying {
+    background: var(--bg-flying);
+  }
+
+  .bg-fire {
+    background: var(--bg-fire);
+  }
+
+  .bg-grass {
+    background: var(--bg-grass);
+  }
+
+  .bg-bug {
+    background: var(--bg-bug);
+  }
+
+  .bg-water {
+    background: var(--bg-water);
+  }
+
+  .bg-electric {
+    background: var(--bg-electric);
+  }
+
+  .bg-poison {
+    background: var(--bg-poison);
+  }
+
+  .bg-normal {
+    background: var(--bg-normal);
+  }
+
+  .bg-fairy {
+    background: var(--bg-fairy);
+  }
+
+  .bg-ground {
+    background: var(--bg-ground);
+  }
+
+  .bg-fighting {
+    background: var(--bg-fighting);
+  }
+
+  .bg-psychic {
+    background: var(--bg-psychic);
+  }
+
+  .bg-rock {
+    background: var(--bg-rock);
+  }
+
+  .bg-dark {
+    background: var(--bg-dark);
+  }
+
+  .bg-ghost {
+    background: var(--bg-ghost);
+  }
+
+  .bg-steel {
+    background: var(--bg-ghost);
+  }
+
+  .bg-dragon {
+    background: var(--bg-fire);
+  }
+
+  .bg-ice {
+    background: var(--bg-ice);
+  }
+
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .wrap {
+    flex-wrap: wrap;
+  }
+
+  .d-none {
+    display: none !important;
+  }

@@ -1,0 +1,275 @@
+  /* -----------------  HEADER WITH TITLE AND FILTERS --------------- */
+  
+  .header {
+    padding: 0px 50px 0px 50px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    min-height: 100px;
+    background-color: rgb(247, 235, 127);
+    border-bottom:rgb(7, 7, 133);
+    z-index: 2;
+  }
+
+  .header span {
+    color: rgb(248, 227, 35);
+    -webkit-text-stroke: 2px rgb(7, 7, 133);
+    font-size: 48px;
+    font-weight: bold;
+    margin-right: 50px;
+    font-style: italic;
+  }
+
+  .header img {
+    height: 100px;
+    width: 200px;
+    object-fit: contain;
+    margin-right: 50px;
+  }
+
+  /* --------------  POKEDEX WITH POKEMON CARDS  -------------- */
+
+  #pokedex {
+    margin-top: 0px;
+  }
+
+  .pokedex-card {
+    width: 230px;
+    aspect-ratio: 5/4;
+    flex-shrink: 0;
+    border-radius: 20px;
+    padding: 15px 20px;
+    margin: 10px;
+    position: relative;
+    color: white;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.5);
+  }
+
+  .pokedex-card:hover {
+    transform: translateY(-5%);
+    box-shadow: 5px 5px 10px 2px rgba(75, 53, 53, 0.5);
+  }
+
+  .pokedex-img {
+    width: 50%;
+    position: absolute;
+    right: 5px;
+    bottom: 10px;
+  }
+
+  .pokename {
+    font-size: 24px;
+  }
+
+  .poketype {
+    margin-right: 10px;
+    border-radius: 10px;
+    padding: 8px;
+    text-align: center;
+    font-weight: 500;
+    width: 40%;
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  @media (max-width: 700px) {
+    #pokedex {
+      margin-top: 80px;
+    }
+  }
+
+  @media (max-width: 450px) {
+    #pokedex {
+      margin-top: 120px;
+    }
+  }
+
+
+  /* -----------------  SELECTED POKEMON CARD --------------- */
+
+.background {
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#selected-pokemon-h1 {
+  font-size: 32px;
+}
+
+#selected-pokemon-img {
+  position: absolute;
+  top: 40%;
+  right:5%;
+  width: 10vw;
+  z-index: 2;
+}
+
+.card {
+  padding: 10px;
+  position: absolute;
+  width: 320px !important;
+  height: 600px !important;
+  align-items: flex-start;
+  color: white;
+}
+
+.card-title {
+  width: 100%;
+  height: 40%;
+  position: relative;
+  padding: 35px 35px;
+  overflow: hidden;
+}
+
+.btn-secondary {
+  margin-left: 220px;
+  margin-top: -30px;
+}
+
+.card-body {
+  padding: 30px;
+  width: 100%;
+  height: 60%;
+  z-index: 1;
+  background-color: grey;
+}
+
+/* -----------------  TABLE AND FLAPS FOR SELECTED POKEMON DETAILS --------------- */
+
+.pokemon-details {
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  padding: 10px;
+}
+
+.pokemon-details div:first-child {
+  width: 100px;
+}
+
+.pokemon-flap {
+  color: rgb(186, 186, 186);
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 10px, 20px, 10px, 20px;
+}
+
+.active-flap {
+  color: #fff;
+  text-decoration: underline 4px lightgray;
+  text-underline-offset: 10px;
+}
+
+table {
+  font-size: 1rem;
+  text-align: start;
+}
+
+td {
+  padding: 3px;
+  vertical-align: top;
+}
+
+th {
+  width: 100px;
+  font-weight: 600;
+}
+
+/* -----------------  FILTERS INPUT AND RESULT --------------- */
+
+#filter-container-name {
+  border-radius: 10px;
+  z-index: 2;
+  flex-shrink: 0;
+  margin: 10px;
+  cursor: pointer;
+}
+
+#filter-container-type {
+  border-radius: 10px;
+  z-index: 2;
+  flex-shrink: 0;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.filter-btn {
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.filter-btn img {
+  height: 20px;
+  width: 20px;
+}
+
+.filter-btn:hover {
+  transform: translateY(-5%);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+#filter-input-name {
+  height: 40px;
+  width: 150px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  padding: 0 15px;
+}
+
+#filter-input-name:focus {
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+#filter-input-type {
+  height: 40px;
+  width: 150px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  padding: 0 15px;
+}
+
+#filter-input-type:focus {
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+#filter-result {
+  margin-top: 50px;
+  padding: 0 80px;
+}
+
+
+@media (max-width: 700px) {
+  #filter-result {
+    margin-top: 80px;
+  }
+}
+
+@media (max-width: 450px) {
+  #filter-result {
+    margin-top: 120px;
+  }
+}
